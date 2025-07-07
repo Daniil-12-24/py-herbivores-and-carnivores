@@ -28,7 +28,7 @@ class Herbivore(Animal):
 
 
 class Carnivore(Animal):
-    def bite(self, target: str) -> None:
+    def bite(self, target: Animal) -> None:
         if isinstance(target, Carnivore):
             print(f"{self.name} can't bite another carnivore")
             return
